@@ -1,0 +1,18 @@
+{
+  "name": "especializacion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "dependencies": {
+    "express": "^4.21.0",
+    "live-server": "^1.2.2",
+    "node-gyp": "^10.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

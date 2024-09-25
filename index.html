@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Control de temperatura de pollitos</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body style=" background-color: lightgray;">
+  <h1>Control de temperatura de pollitos</h1>
+  <div id="chart"></div>
+  <script src="script.js"></script>
+  <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; max-width: 60%vw; margin-top: 20px; margin-left: 15%">
+    
+    <div>
+      <h4>Referencias de Líneas</h4>
+      <div style="display: flex; align-items: center; margin-bottom: 5px;">
+        <svg width="30" height="20">
+          <path d="M5,15 Q15,5 25,15" stroke="green" stroke-width="3" fill="none"/>
+        </svg>
+        <span style="margin-left: 5px;">Temp. Pollitos</span>
+      </div>
+      <div style="display: flex; align-items: center; margin-bottom: 5px;">
+        <svg width="30" height="20">
+          <path d="M5,15 Q15,5 25,15" stroke="blue" stroke-width="3" fill="none"/>
+        </svg>
+        <span style="margin-left: 5px;">Temp. Exterior</span>
+      </div>
+    </div>
+    
+    <div>
+      <div style="margin-top: 60px;"></div>
+      <div style="display: flex; align-items: center; margin-bottom: 5px;">
+        <svg width="30" height="20">
+          <line x1="5" y1="10" x2="25" y2="10" stroke="black" stroke-width="2"/>
+        </svg>
+        <span style="margin-left: 5px;">Temp. Objetivo</span>
+      </div>
+      <div style="display: flex; align-items: center;">
+        <svg width="30" height="20">
+          <line x1="5" y1="10" x2="25" y2="10" stroke="green" stroke-width="2"/>
+        </svg>
+        <span style="margin-left: 5px;">Rango Tolerable</span>
+      </div>
+      <div style="display: flex; align-items: center;">
+        <svg width="30" height="20">
+          <line x1="5" y1="10" x2="25" y2="10" stroke="yellow" stroke-width="2"/>
+        </svg>
+        <span style="margin-left: 5px;">Rango Límite</span>
+      </div>
+    </div>
+
+    <div>
+      <h4>Temp. de Ventilación</h4>
+      <div style="display: flex; align-items: center; margin-bottom: 5px;">
+        <div style="width: 20px; height: 20px; background-color: darkblue;"></div>
+        <span style="margin-left: 5px;">Frío --</span>
+      </div>
+      <div style="display: flex; align-items: center; margin-bottom: 5px;">
+        <div style="width: 20px; height: 20px; background-color: aqua;"></div>
+        <span style="margin-left: 5px;">Frío -</span>
+      </div>
+    </div>
+    
+    <div>
+      <div style="margin-top: 60px;"></div>
+      <div style="display: flex; align-items: center; margin-bottom: 5px;">
+        <div style="width: 20px; height: 20px; background-color: orange;"></div>
+        <span style="margin-left: 5px;">Calor +</span>
+      </div>
+      <div style="display: flex; align-items: center;">
+        <div style="width: 20px; height: 20px; background-color: red;"></div>
+        <span style="margin-left: 5px;">Calor ++</span>
+      </div>
+    </div>  
+  </div>
+
+</body>
+</html>
